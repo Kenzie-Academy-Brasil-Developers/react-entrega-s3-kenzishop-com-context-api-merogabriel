@@ -55,6 +55,11 @@ img {
   border-radius: 20px;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: rgb(82, 182, 82);
+}
+
 .botaoCarrinho {
   background-color: green;
   color: white;
@@ -63,11 +68,7 @@ img {
   height: 70px;
   border-radius: 20px;
   font-size: 1.2rem;
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin-bottom: 2rem;
 }
 
 .cardCart {
@@ -87,6 +88,7 @@ img {
 .cartList {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -101,6 +103,10 @@ img {
   padding: 0.4rem 1rem;
   border-radius: 20px;
   font-size: 12px;
+}
+
+.wrapper {
+  text-align: center;
 }
 
 @media (min-width: 767px) {
