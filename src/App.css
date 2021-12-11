@@ -1,104 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.App {
-  text-align: center;
-}
-
-header {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.list {
-  width: 100vw;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.card {
-  width: 200px;
-  box-shadow: 0px 0px 3px 3px #888888;
-  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f8f8;
 }
 
 .card img {
   width: 200px;
   height: 200px;
-  border-radius: 4px;
+  border-radius: 20px;
+}
+
+header {
+  width: 100vw;
+  height: 250px;
+  text-align: center;
+  background-color: lightgreen;
+  color: white;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background-color: #f5f5f5;
+  border: white 1px solid;
+  text-align: center;
+  border-radius: 20px;
+  color: #5b5b5b;
+  margin-bottom: 2rem;
+}
+
+.info {
+  font-size: 20px;
+}
+
+img {
+  margin-bottom: 1rem;
 }
 
 .card button {
-  border: none;
-  border-radius: 5px;
-  background-color: green;
+  background-color: lightgreen;
   color: white;
-  cursor: pointer;
-  font-size: 1.2rem;
-  padding: 1rem 0.5rem;
+  border: none;
+  font-size: 16px;
   width: 100%;
+  height: 50px;
+  border-radius: 20px;
 }
 
 .botaoCarrinho {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 5px;
-  background-color: blueviolet;
+  background-color: green;
   color: white;
-  cursor: pointer;
+  border: none;
+  width: 300px;
+  height: 70px;
+  border-radius: 20px;
   font-size: 1.2rem;
-  margin-top: 20vh;
-  width: 400px;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cardCart {
+  background-color: #f5f5f5;
+  border: white 1px solid;
+  text-align: center;
+  border-radius: 20px;
+  color: #5b5b5b;
+  margin-bottom: 2rem;
+}
+.cardCart img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
 }
 
 .cartList {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.cardCart {
-  width: 200px;
-  box-shadow: 0px 0px 3px 3px #888888;
-  border-radius: 4px;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-.cardCart img {
-  width: 200px;
-  height: 200px;
-}
-
-.resumo {
-  display: flex;
-  flex-direction: row;
-  margin-left: 1rem;
+  flex-direction: column;
   align-items: center;
 }
 
-.resumo h2 {
-  font-size: 20px;
-  margin: 1rem;
+.App-header header {
+  display: flex;
+  flex-direction: column;
 }
 
-.resumo span {
-  width: 100px;
-  margin: 1rem;
-}
-
-.resumo p {
-  margin: 1rem;
-}
-
-.resumo button {
-  width: 80%;
-  align-self: center;
-  border-radius: 4px;
+.App-header header button {
+  background-color: yellow;
   border: none;
-  background-color: green;
-  color: white;
-  padding: 0.5rem 0.2rem;
-  margin-left: 4rem;
-  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+@media (min-width: 767px) {
+  header {
+    justify-content: space-evenly;
+  }
+  .list {
+    margin-top: 4rem;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .cartList {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
